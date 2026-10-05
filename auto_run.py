@@ -7,16 +7,16 @@ from watchdog.events import FileSystemEventHandler
 class MyHandler(FileSystemEventHandler):
 
     def on_modified(self, event):
-        if event.src_path.endswith("Class2.py"):
-            print("\nFile updated. Running Class2.py...\n")
-            subprocess.run(["python", "Class2.py"])
+        if event.src_path.endswith("Class3.py"):
+            print("\nFile updated. Running Class3.py...\n")
+            subprocess.run(["python", "Class3.py"])
 
 
 observer = Observer()
 observer.schedule(MyHandler(), ".", recursive=False)
 observer.start()
 
-print("Watching Class2.py for changes...")
+print("Watching Class3.py for changes...")
 
 try:
     while True:

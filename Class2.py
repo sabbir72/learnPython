@@ -62,7 +62,7 @@ a= 5
 b= 50 
 print("Result values :", a is b)
 
-
+```
 d=1
 e=1
 print("Result values :", e is d)
@@ -70,3 +70,7 @@ print("Result values :", e is d)
 d=6000
 e=6000
 print("Result values :", e is d)
+
+
+
+print("====> 8 bitwise #operator")
